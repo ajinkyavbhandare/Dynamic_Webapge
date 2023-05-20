@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <title>Weather Information</title>
+    <script src="scrapper.js"></script>
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./index.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap"
+    />
+  </head>
+  <body>
+    <div class="macbook-air-1">
+      <div class="weather-information">Weather Information</div>
+      <div class="macbook-air-1-child"></div>
+      <div class="city">City: <span id="city"></span></div>
+      <div class="temperaturef">Temperature(°F): <span id="temperature"></div>
+      <div class="weather-description">Weather Description: <span id="weather-description"></div>
+    </div>
+    <script>
+        function scrapeWeatherAndUpdate() {
+            scrapeWeather(); // Call the scrapeWeather() function to update the weather information
+        }
+
+        setInterval(scrapeWeatherAndUpdate, 10); // Update weather information every second
+    </script>
+  </body>
+</html>
