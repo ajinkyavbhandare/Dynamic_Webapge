@@ -3,12 +3,12 @@
   height: 12.85%;
   top: 2.42%;
   left: calc(50% - 246px);
-  font-size: 4vw; /* Adjust the font size using viewport units (vw) */
+  font-size: 48px;
   font-weight: 200;
   display: inline-block;
   width: 541.44px;
   text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-}
+}  
 .macbook-air-1-child {
   position: absolute;
   height: 0.12%;
